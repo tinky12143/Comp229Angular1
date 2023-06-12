@@ -1,3 +1,9 @@
+/* 
+  File name: projects.component.ts
+  Student’s Name: Lok Yan Lee
+  StudentID: 301233707
+  Date: 12 Jun 2023
+*/
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,10 +12,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-
+  // Contextual variable names are used for clarity
   projects: {imageUrl: string, link: string, description: string}[];
 
   constructor() {
+    //My projects
     this.projects = [
       {
         imageUrl: 'assets/images/project1.jpg',
