@@ -1,0 +1,13 @@
+<!-- Welcome message and mission -->
+<div>
+    <!-- Welcome message -->
+    <p>Welcome everyone to my portfolio. <br> <br>
+    You can <strong><a routerLink="/about">click here</a></strong> to know more about me.</p>
+    <br><br><br>
+    <!-- Mission -->
+    <strong>Mission</strong> <br>
+    <ol>
+      <li *ngFor="let missionItem of mission">{{ missionItem }}</li>
+    </ol>
+  </div>
+  

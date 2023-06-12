@@ -1,0 +1,13 @@
+<div>
+    <header>
+      <h3>Student name: {{ name }} Student # {{ studentNumber }}</h3>
+    </header>
+    <main>
+      <p><i>{{ background }}</i></p>
+      <h4>Some of my favourite things to do:</h4>
+      <ul>
+        <li *ngFor="let thing of favouriteThings">{{ thing }}</li>
+      </ul>
+    </main>
+  </div>
+  
