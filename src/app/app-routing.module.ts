@@ -5,6 +5,10 @@ import { ContactComponent } from './contact/contact.component';
 import { IndexComponent } from './index/index.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ServicesComponent } from './services/services.component';
+import { AuthGuard } from './guards/auth.guard';
+import { LoginComponent } from './login/login.component';
+import { ProtectedComponent } from './protected/protected.component';
+
 // Import other components...
 
 const routes: Routes = [
@@ -14,6 +18,8 @@ const routes: Routes = [
   { path: 'projects', component: ProjectsComponent },
   { path: 'services', component: ServicesComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
+  { path: 'protected', component: ProtectedComponent, canActivate: [AuthGuard] },
   // Add other routes...
 ];
 
